@@ -600,7 +600,7 @@ body {
   transition: fill var(--main-animation);
 }
 
-.mail-sub-row {
+.mail-sub-form {
   display: flex;
   align-items: flex-end;
   gap: 12px;
@@ -620,7 +620,7 @@ body {
 }
 
 .mail-sub-input {
-  width: 358px;
+  width: 362px;
   height: 50px;
 
   padding: 15px 16px;
@@ -838,13 +838,21 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
-
   cursor: pointer;
-  border: 1px solid var(--close-modal-brdr);
-  border-radius: 50%;
+
   padding: 6px;
 
-  background-color: inherit;
+  border: 1px solid var(--close-modal-brdr);
+  border-radius: 50%;
+
+  transition: fill var(--main-animation);
+
+  background-color: transparent;
+}
+
+.modal-btn:hover,
+.modal-btn:focus {
+  fill: var(--accent-cl);
 }
 
 /* register form */
